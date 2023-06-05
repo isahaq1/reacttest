@@ -1,4 +1,6 @@
 "use client";
+import reacTable from "react-table";
+import { useTable } from "react-table";
 import React, { useEffect, useState } from "react";
 interface User {
   name: string;

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -20,14 +21,20 @@ export default function RootLayout({
         
         <nav className='h-16 bg-gray-800 text-white flex justify-between items-center px-4'>
           <div>
-            <p>Firs Project</p>
+          <Link href='/'>
+          Home
+         </Link>
           </div>
           <ul className='flex justify-center items-center space-x-4'> 
-         <li>second</li>
-         <li>second</li>
-         <li>second</li>
-         <li>second</li>
-         <li>second</li>
+         <Link href='/brands'>
+          Brands
+         </Link>
+         <Link href='/users'>
+          Users
+         </Link>  
+         <Link href='/signup'>
+          Signup
+         </Link> 
           </ul>
 
         </nav>
